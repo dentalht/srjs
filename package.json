@@ -1,10 +1,10 @@
 {
   "name": "angular-seed",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "SmileRadius is a leading provider of dental software services. We help to provide you very economical and comprehensive patient communication features for your practices. Call 718 339 1607 for help.",
-  "repository": "https://github.com/angular/angular-seed",
-  "license": "MIT",
+  "repository": "https://github.com/dentalht/srjs",
+  "license": "CL",
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
