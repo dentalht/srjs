@@ -11,7 +11,7 @@ angular.module('srApp.home', [
   });
 }])
 
-.controller('HomeCtrl', [function($scope) {
+.controller('HomeCtrl', [function slides ($scope) {
   $scope.slides = [
             {image: 'images/slider_img1.jpg', description: 'Image 01'},
             {image: 'images/slider_img2.jpg', description: 'Image 02'},
