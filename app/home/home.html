@@ -1,7 +1,11 @@
 <div ng-controller="Slider">
-  <div class="slide" ng-repeat="image in images" ng-show="image.visible">
-    <img ng-src="images/{{image.src}}" />
-  </div>
+<div class="slider">
+  <uib-carousel active="active" interval="3000">
+    <uib-slide ng-repeat="slide in home.slides track by slide.id" index="$index">
+      <img class="img-responsive" ng-src="{{slide.img}}" alt="{{slide.alt}}">
+    </uib-slide>
+  </uib-carousel>
+</div>
   <div class="arrows">
     <a href="#" ng-click="prev()">
       <span class="glyphicon glyphicon-step-backward"></span>
