@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('srApp.home', ['ngRoute'])
+angular.module('srApp.home', [
+  'ngRoute'
+])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {
@@ -10,5 +12,9 @@ angular.module('srApp.home', ['ngRoute'])
 }])
 
 .controller('HomeCtrl', [function($scope) {
-  $scope.name = "Slider";
+  $scope.slides = [
+            {image: 'images/slider_img1.jpg', description: 'Image 01'},
+            {image: 'images/slider_img2.jpg', description: 'Image 02'},
+            {image: 'images/slider_img3.jpg', description: 'Image 03'}
+        ];
 }]);
