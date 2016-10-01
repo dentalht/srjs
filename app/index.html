@@ -46,11 +46,9 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
+<div class="container">
   <div ng-view></div>
-
-  <div>SmileRadius app: v<span app-version></span></div>
-
+</div>
     <!--Footer-->
     <footer class="footer">
       <div class="container">
@@ -58,13 +56,13 @@
 		    <div class="container-fluid" id="footernav">
 			    <div class="menuFooter floatL">
 				    <ul class="footerList">
-					    <li><a href="index.html" class="active">Home</a></li>
-					    <li><a href="features.html">Features</a></li>
-					    <li><a href="why.html">Why Us</a></li>
-					    <li><a href="testimonials.html">Testimonials</a></li>
-					    <li><a href="pricing.html">Pricing</a></li>
-					    <li><a href="support.html">Support</a></li> <li><a href="faq.html"> FAQ</a></li>
-					    <li class="last"><a href="contact.html">Contact us</a></li>
+					    <li><a href="#!/index" class="active">Home</a></li>
+					    <li><a href="#!/features">Features</a></li>
+					    <li><a href="#!/whyus">Why Us</a></li>
+					    <li><a href="#!/testimonials">Testimonials</a></li>
+					    <li><a href="#!/pricing">Pricing</a></li>
+					    <li><a href="#!/support">Support</a></li> <li><a href="#!/faq"> FAQ</a></li>
+					    <li class="last"><a href="#!/contact">Contact us</a></li>
 				    </ul>
 				     <div class="copy" align="left">&copy; 2013-2014, CloudLions. <span class="copyFontNormal">All rights reserved. </span> </div>
 					<address><span style="color: #535353">CloudLions, LLC. 115 Canterbury Road, Suite D18, Great Neck, NY 11021 Tel:  855-546-6720, Email:  smileradius@cloudlions.com</span></address>
@@ -73,6 +71,7 @@
             </div>
       </div>
       </div>
+      <div>SmileRadius app: v<span app-version></span></div>
     </footer>
     
   <!-- In production use:
