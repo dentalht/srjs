@@ -1,23 +1,52 @@
-<div ng-controller="HomeCtrl" id="slides_control">
-    <div>
-      <carousel interval="3000">
-        <slide ng-repeat="slide in slides" active="slide.active">
-          <img ng-src="{{slide.image}}">
-          <div class="carousel-caption">
-            <h4>Slide {{$index+1}}</h4>
-          </div>
-        </slide>
-      </carousel>
-    </div>
-  </div>
-  <div class="arrows">
-    <a href="#" ng-click="prev()">
-      <span class="glyphicon glyphicon-step-backward"></span>
-    </a>
-    <a href="#" ng-click="next()">
-      <span class="glyphicon glyphicon-step-forward"></span>
-    </a>
-  </div>
+<div id="main" class="">
+
+	    <div id="sliderBlock">
+		    <div id="wrapper" class="clear slider">
+			    <!-- Slideshow -->
+			    <ul class="rslides" id="slider2">
+			      <li><a href="#"><img src="images/slider_img1.jpg" alt="img" /></a></li>
+			      <li><a href="#"><img src="images/slider_img2.jpg" alt="img" /></a></li>
+			      <li><a href="#"><img src="images/slider_img3.jpg" alt="img" /></a></li>
+			      <li><a href="#"><img src="images/slider_img4.jpg" alt="img" /></a></li>
+			    </ul>
+			
+                <!-- Popup screens -->
+			    <div class="clear featuredBlock">
+				    <ul class="featuredList">
+					    <li class="featuredListFirst"><a href="images/preview/Birthday Greetings.jpg" data-lightbox="roadtrip">Birthday greetings</a>
+						    <ul class="sub">
+							    <li><img src="images/preview/BirthdayGreetings_preview.jpg" alt="img" /></li>
+						    </ul>
+					    </li>
+					    <li class="featuredListSecond"><a href="images/preview/Reminder.jpg" data-lightbox="roadtrip">Reminder</a>
+						    <ul class="sub">
+							    <li><img src="images/preview/Reminder_preview.jpg" alt="img" /></li>
+						    </ul>
+					    </li>
+					    <li class="featuredListThird"><a href="images/preview/Recall.jpg" data-lightbox="roadtrip">Recall</a>
+						    <ul class="sub">
+							    <li><img src="images/preview/Recall_preview.jpg" alt="img" /></li>
+						    </ul>
+					    </li>
+					    <li class="featuredListForth"><a href="images/preview/Patient Reviews.jpg" data-lightbox="roadtrip">Ratings & Reviews</a>
+						    <ul class="sub">
+							    <li><img src="images/preview/Patient_Reviews_Preview.jpg" alt="img" /></li>
+						    </ul>
+					    </li>
+					    <li class="featuredListFifth"><a href="images/preview/Promotion.jpg" data-lightbox="roadtrip">Promotion</a>
+						    <ul class="sub">
+							    <li><img src="images/preview/Promotion_Preview.jpg" alt="img" /></li>
+						    </ul>
+					    </li>
+					    <li class="featuredListSixth last"><a href="images/preview/Newsletters.jpg" data-lightbox="roadtrip">Newsletters</a>
+						    <ul class="sub">
+							    <li><img src="images/preview/Newsletters_Preview.jpg" alt="img" /></li>
+						    </ul>
+					    </li>
+				    </ul>
+			    </div>
+		    </div>
+	    </div>
 
 	    <!--Text content -->
 	    <div id="textBlock">
@@ -89,6 +118,3 @@ use reactivation tools </strong><br />
 		    </div>
 	    </div>
         <!--Text content end -->
-
-        <div class="hFooter"></div>
-</div>
