@@ -17,4 +17,23 @@ angular.module('srApp.home', [
             {image: 'images/slider_img2.jpg', description: 'Image 02'},
             {image: 'images/slider_img3.jpg', description: 'Image 03'}
         ];
+  
+    $scope(function () {
+        // Slideshow
+        $("#slider2").responsiveSlides({
+        auto: true,
+        pager: true,
+        speed: 500,
+        maxwidth: 960
+        });
+    });
+    $scope(function(){
+        $(".slides").slides(); // контейнер с элементами слайдера
+    });
+    $scope(document).ready(function(){
+    $(".slider .featuredList > li > a").lightbox({
+    fitToScreen: true
+    });
+    });
+
 }]);
