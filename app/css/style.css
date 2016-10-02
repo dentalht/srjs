@@ -354,7 +354,7 @@ line-height: 20px;
 	width:84px;
 	text-decoration:none;
 	float:right;
-	line-height:39px;
+	line-height:50px;
     margin-right: 0px;
 	position:relative;
 }
@@ -365,7 +365,7 @@ line-height: 20px;
 	width:400px;
 	text-decoration:none;
 	float:right;
-	line-height:39px;
+	line-height:50px;
 position:absolute;
 }
 
@@ -873,10 +873,8 @@ position:absolute;
 }
 .footer {
 	color: #fff;
-	height: 65px;
 	margin: 0 auto 0;
-	width:940px;
-	padding:27px 20px;
+	width:100%;
 }
 
 .footerList{

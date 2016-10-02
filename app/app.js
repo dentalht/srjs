@@ -16,5 +16,23 @@ angular.module('srApp', [
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/home'});
+  $routeProvider
+              .when('/', {
+                controller: 'HomeCtrl',
+                templateUrl: 'home/home.html',
+                controllerAs: 'vm'
+            })
+            .when('/login', {
+                controller: 'LoginController',
+                templateUrl: 'login/login.view.html',
+                controllerAs: 'vm'
+            })
+
+            .when('/register', {
+                controller: 'RegisterController',
+                templateUrl: 'register/register.view.html',
+                controllerAs: 'vm'
+            })
+  
+            .otherwise({redirectTo: '/home'});
 }]);
