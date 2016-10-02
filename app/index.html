@@ -96,5 +96,34 @@
   <script src="js/angular-carousel.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"></script>
   <script src="js/lightbox-2.6.min.js"></<script>
+  <script>
+    $(function () {
+        // Slideshow
+        $("#slider2").responsiveSlides({
+        auto: true,
+        pager: true,
+        speed: 500,
+        maxwidth: 960
+        });
+    });
+</script>
+
+<!-- LightBox with slidshow -->
+<script type="text/javascript">
+    $(function(){
+        $(".slides").slides(); // контейнер с элементами слайдера
+    });
+</script>
+
+<!-- Lightbox -->
+<script type="text/javascript">
+    $(document).ready(function(){
+    $(".slider .featuredList > li > a").lightbox({
+    fitToScreen: true
+    });
+    });
+</script>
+
+
 </body>
 </html>
